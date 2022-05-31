@@ -1,0 +1,69 @@
+#include <iostream> 
+using namespace std;   
+int main() {    
+    int n;int a=0;
+    cout << "Nhap so phan tu cua mang: ";
+    cin>>n;
+    int arr[n];
+    cout << "Nhap cac phan tu cua mang: \n";
+    for (int i = 1; i <= n; i++) {
+        printf("a[%d] = ", i);
+        cin >> arr[i];
+    }
+ { cout << "Ket qua 1: ";
+{for (int i = 0; i <= n; i++)
+    {
+      for (int j = i + 1; j <= n; j++)
+	{
+	    int temp = arr[i];
+	    arr[i] = arr[j];
+	    arr[j] = temp;
+	}
+    }
+for (int x : arr)
+    {
+      cout << x << " ";
+    }}
+    cout << endl;
+  cout << "Ket qua 2: ";
+ { for (int i = 0; i < n; i++)
+  {if (i==(n-1))
+  
+  {cout << arr[0]+arr[n-1];}}
+   cout << endl;
+   cout << "Ket qua 3: ";
+   for (int i = 0; i < n; i++)
+   {if (n%2==0)
+   {
+       cout << arr[n-n/2]<<" "<<arr[n/2-1];
+       break;
+   }
+   
+      else if (n%2!=0)
+   {    int a =n/2+0.5;
+       cout<< arr[a];
+       break;
+   }       
+   }}cout << endl;}
+     cout << "Ket qua 4: ";
+   
+  { int sum1=0; int sum2=0;
+   for (int i = 0; i <= n-1; i++)
+   {if (arr[i]%2==1)
+   {
+       sum1 += arr[i];       
+   }     
+   else
+   {
+       sum2 += arr[i];
+       
+   }}
+    cout << sum1*sum2;}
+}
+   
+   
+   
+
+
+
+
